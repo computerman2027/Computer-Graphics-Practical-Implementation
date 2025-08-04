@@ -85,7 +85,7 @@ void lineSlopeIntercept(HDC hdc, int x1, int y1, int x2, int y2)
         for (int x = x1; x != x2 + sx; x += sx)
         {
             float y = m * x + c;
-            printf("%7d|%7d|%7f|%7d|%7d\n", x - x1, x, y, x, (int)(y + 0.5));
+            printf("%7d|%7d|%7f|%7d|%7d\n", x - x1, x, y, x, (int)(y ));
             // SetPixel(hdc, x, (int)(y + 0.5), RGB(255, 0, 0));
             SetPixel(hdc, x, (int)(y), RGB(255, 0, 0));
         }
@@ -97,7 +97,7 @@ void lineSlopeIntercept(HDC hdc, int x1, int y1, int x2, int y2)
         for (int y = y1; y != y2 + sy; y += sy)
         {
             float x = (y - c) / m;
-            printf("%7d|%7f|%7d|%7d|%7d\n", y - y1, x, y, (int)(x + 0.5), y);
+            printf("%7d|%7f|%7d|%7d|%7d\n", y - y1, x, y, (int)(x ), y);
             // SetPixel(hdc, (int)(x + 0.5), y, RGB(255, 0, 0));
             SetPixel(hdc, (int)(x), y, RGB(255, 0, 0));
         }
