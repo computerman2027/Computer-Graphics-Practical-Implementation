@@ -21,6 +21,7 @@ void CircleDrawingByStandardEqualtion(HDC hdc, int xc, int yc, int radius)
         printf("%7d|%7d|%7f|%7d|%7d\n",k,x,y2,x,(int)y2);
         k++;
 
+
     }
 }
 
@@ -50,7 +51,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
     wc.lpszClassName = "MyWindowClass";
     RegisterClass(&wc);
 
-    HWND hwnd = CreateWindow("MyWindowClass", "Slope Intercept Line", WS_OVERLAPPEDWINDOW, CW_USEDEFAULT, CW_USEDEFAULT, 1000, 1000, NULL, NULL, hInstance, NULL);
+    HWND hwnd = CreateWindow("MyWindowClass", "Circle Drawing Algorithm By Formula", WS_OVERLAPPEDWINDOW, CW_USEDEFAULT, CW_USEDEFAULT, 1000, 1000, NULL, NULL, hInstance, NULL);
 
     ShowWindow(hwnd, nCmdShow);
     UpdateWindow(hwnd);
