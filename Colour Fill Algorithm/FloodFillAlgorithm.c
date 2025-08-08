@@ -169,7 +169,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
     HWND hwnd = CreateWindowEx(
         0,
         CLASS_NAME,
-        "Midpoint Circle with Boundary Fill (Fixed)",
+        "Midpoint Circle with Flood Fill",
         WS_OVERLAPPEDWINDOW,
         CW_USEDEFAULT, CW_USEDEFAULT, 800, 800,
         NULL, NULL, hInstance, NULL);
